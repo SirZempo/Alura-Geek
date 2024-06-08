@@ -8,7 +8,7 @@ async function obtenerProductos() {
     return conexionConvertida;
 }
 
-async function crearProducto(nombre, precio, url) {
+async function enviarProducto(nombre, precio, url) {
     const conexion = await fetch("http://localhost:3001/prodcutos", {
         method: "POST",
         headers: { "Content-type": "application/json" },
@@ -23,5 +23,5 @@ async function crearProducto(nombre, precio, url) {
 }
 
 export const conexionAPI = {
-    obtenerProductos
+    obtenerProductos, enviarProducto
 };

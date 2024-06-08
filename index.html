@@ -38,25 +38,25 @@
             </section>
             <section class="seccion-formulario">
                 <h2>Agregar Producto:</h2>
-                <form class="formulario-principal" action="">
+                <form class="formulario-principal" action="" data-formulario>
                     <fieldset class="campo-formulario">
                         <label class="campo-etiqueta" for="nombre">Nombre:</label>
-                        <input class="campo-input" name="nombre" id="nombre" type="text" placeholder="Game Boy" maxlength="20" required>
+                        <input class="campo-input" name="nombre" id="nombre" type="text" placeholder="Game Boy" maxlength="20" required data-nombre>
                         <span class="mensaje-error"></span>
                     </fieldset>
                     <fieldset class="campo-formulario">
                         <label class="campo-etiqueta" for="precio">Precio:</label>
-                        <input class="campo-input" name="precio" id="precio" type="text" placeholder="$20.99" required>
+                        <input class="campo-input" name="precio" id="precio" type="text" placeholder="$20.99" required data-precio>
                         <span class="mensaje-error"></span>
                     </fieldset>
                     <fieldset class="campo-formulario">
                         <label class="campo-etiqueta" for="imagen">Imagen:</label>
-                        <input class="campo-input" name="imagen" id="imagen" type="text" placeholder="https://th.bing.com/th/id/OIP.OTgrHDkJnbOlj6wXr8ZZWgAAAA?rs=1&pid=ImgDetMain" required>
+                        <input class="campo-input" name="imagen" id="imagen" type="text" placeholder="https://th.bing.com/th/id/OIP.OTgrHDkJnbOlj6wXr8ZZWgAAAA?rs=1&pid=ImgDetMain" required data-url>
                         <span class="mensaje-error"></span>
                     </fieldset>
                     <div class="contenedor-botones">
                         <input value="Enviar" class="boton boton-enviar" id="enviar" type="submit" data-boton-enviar>
-                        <input value="Limpiar" class="boton boton-limpiar" id="limpiar" type="submit" data-boton-enviar>
+                        <input value="Limpiar" class="boton boton-limpiar" id="limpiar" type="reset" data-boton-limpiar>
                     </div>
                 </form>
             </section>

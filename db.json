@@ -1,28 +1,34 @@
 {
-    "prodcutos": [
-        {
-            "id" : "1",
-            "nombre" : "StartTruper",
-            "precio" : "400.70",
-            "url" : "./img/taza-starwars.png"
-        },
-        {
-            "id" : "2",
-            "nombre" : "Game Boy",
-            "precio" : "500.00",
-            "url" : "./img/gameboy.png"
-        },
-        {
-            "id" : "3",
-            "nombre" : "Consola Portatil",
-            "precio" : "99.99",
-            "url" : "https://gadgetsandfunmx.com/api/fileApi/images/123/3/consolaroja.jpg"
-        },
-        {
-            "id" : "4",
-            "nombre" : "Atari Collection",
-            "precio" : "600.00",
-            "url" : "https://www.eluniversal.com.mx/resizer/aWCR1mtxVYXMOur0xSZ-3w8H54w=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/W55WYFE5IJEX3KRDMSHUP5TD7E.jpg"
-        }
-    ]
+  "prodcutos": [
+    {
+      "id": "1",
+      "nombre": "StartTruper",
+      "precio": "400.70",
+      "url": "./img/taza-starwars.png"
+    },
+    {
+      "id": "2",
+      "nombre": "Game Boy",
+      "precio": "500.00",
+      "url": "./img/gameboy.png"
+    },
+    {
+      "id": "3",
+      "nombre": "Consola Portatil",
+      "precio": "99.99",
+      "url": "https://gadgetsandfunmx.com/api/fileApi/images/123/3/consolaroja.jpg"
+    },
+    {
+      "id": "4",
+      "nombre": "Atari Collection",
+      "precio": "600.00",
+      "url": "https://www.eluniversal.com.mx/resizer/aWCR1mtxVYXMOur0xSZ-3w8H54w=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/W55WYFE5IJEX3KRDMSHUP5TD7E.jpg"
+    },
+    {
+      "id": "2348",
+      "nombre": "Nintendo 64",
+      "precio": "999.00",
+      "url": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43117571_1/w=800,h=800"
+    }
+  ]
 }
