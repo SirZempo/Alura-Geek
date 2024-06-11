@@ -33,7 +33,7 @@ function crearCard(nombre, precio, url, id) {
     return prodcuto;
 }
 
-async function obtenerProductos(){
+export async function obtenerProductos(){
     try {
         const listAPI = await conexionAPI.obtenerProductos();
     
