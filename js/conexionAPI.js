@@ -1,4 +1,4 @@
-async function obtenerProductos() {
+async function listaProductos() {
     const conexion = await fetch("http://localhost:3001/prodcutos");
     console.log(conexion);
 
@@ -39,5 +39,5 @@ async function eliminarProducto(id){
 }
 
 export const conexionAPI = {
-    obtenerProductos, enviarProducto, eliminarProducto
+    listaProductos, enviarProducto, eliminarProducto
 };

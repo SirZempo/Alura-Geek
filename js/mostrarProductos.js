@@ -33,9 +33,9 @@ function crearCard(nombre, precio, url, id) {
     return prodcuto;
 }
 
-export async function obtenerProductos(){
+export async function render(){
     try {
-        const listAPI = await conexionAPI.obtenerProductos();
+        const listAPI = await conexionAPI.listaProductos();
     
         listAPI.forEach(producto => {
             lista.appendChild(crearCard(producto.nombre, producto.precio, producto.url, producto.id));
@@ -45,4 +45,4 @@ export async function obtenerProductos(){
     }
 }
 
-obtenerProductos();
+render();

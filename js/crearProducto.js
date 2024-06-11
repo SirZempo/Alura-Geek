@@ -1,5 +1,5 @@
 import { conexionAPI } from "./conexionAPI.js";
-import { obtenerProductos } from "./mostrarProductos.js";
+import { render } from "./mostrarProductos.js";
 
 const formulario = document.querySelector("[data-formulario]");
 
@@ -24,7 +24,7 @@ function limpiarForm() {
 
 formulario.addEventListener("submit", evento =>{
     crearProducto(evento);
-    obtenerProductos();
+    render();
 });
 
 formulario.addEventListener("reset", evento=>{
