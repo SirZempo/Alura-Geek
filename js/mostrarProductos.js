@@ -37,7 +37,7 @@ function crearCard(nombre, precio, url, id) {
 export async function render(){
     try {
         const listAPI = await conexionAPI.listaProductos();
-        //lista.innerHTML = "";
+        lista.innerHTML = "";
         /*listAPI.forEach(producto => {
             lista.appendChild(crearCard(producto.nombre, producto.precio, producto.url, producto.id));
         });*/
