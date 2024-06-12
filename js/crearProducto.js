@@ -11,6 +11,8 @@ async function crearProducto(evento) {
 
     try {
         await conexionAPI.enviarProducto(nombre, precio, url);
+        render();
+        formulario.reset();
     } catch (error) {
         console.log(error);
     }

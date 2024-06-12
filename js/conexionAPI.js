@@ -1,11 +1,11 @@
 async function listaProductos() {
-    const conexion = await fetch("http://localhost:3001/prodcutos");
-    console.log(conexion);
-
-    const conexionConvertida = await conexion.json();
-    console.log(conexionConvertida);
-
-    return conexionConvertida;
+    try {
+        const conexion = await fetch("http://localhost:3001/prodcutos");
+        const conexionConvertida = await conexion.json();
+        return conexionConvertida;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function enviarProducto(nombre, precio, url) {

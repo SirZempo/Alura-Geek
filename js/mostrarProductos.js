@@ -1,6 +1,7 @@
 import { conexionAPI } from "./conexionAPI.js";
 
 const lista = document.querySelector(".contenedor-articulos");;
+const formulario = document.querySelector("[data-formulario]");
 
 function crearCard(nombre, precio, url, id) {
     const prodcuto = document.createElement("DIV");
@@ -29,16 +30,19 @@ function crearCard(nombre, precio, url, id) {
             console.log(error);
         }
     });
-
+    lista.appendChild(prodcuto);
     return prodcuto;
 }
 
 export async function render(){
     try {
         const listAPI = await conexionAPI.listaProductos();
-    
-        listAPI.forEach(producto => {
+        //lista.innerHTML = "";
+        /*listAPI.forEach(producto => {
             lista.appendChild(crearCard(producto.nombre, producto.precio, producto.url, producto.id));
+        });*/
+        listAPI.forEach(producto =>{
+            crearCard(producto.nombre, producto.precio, producto.url, producto.id);
         });
     } catch {
         lista.innerHTML = `<h2 class="mensaje_titulo"> Ha ocurrido un problema, no se encuentran productos </h2>`;
